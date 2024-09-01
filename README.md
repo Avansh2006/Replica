@@ -1,2 +1,3 @@
 # Replica
 Replica is a competition organized by OSS Club of AIT,Pune.   
+Read the Read me file to know more about this....
