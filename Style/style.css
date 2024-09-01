@@ -342,10 +342,15 @@ nav ul li img {
 }
 
 #addPhotosButton:hover {
-    background-image: linear-gradient(to right, #ff6a95, #ff4d4d, #d60000);
+    background-image: linear-gradient(to right, #ff6a95, #ff4d4d, #d60000);      
+}
+.story {
+    transform: rotate(0deg);
+    transition: transform 0.5s ease-in-out;
+}
 
-
-      
+.story:hover {
+    transform: rotate(360deg);
 }
 
   
