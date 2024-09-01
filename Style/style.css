@@ -1,0 +1,365 @@
+/* universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafa;
+    color: #262626;
+    
+        font-family: "SUSE", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dbdbdb;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    height: 30px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #efefef;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.search-icon {
+    width: 16px;
+    height: 16px;
+    opacity: 0.5;
+}
+
+.search-input {
+    border: none;
+    background: none;
+    margin-left: 8px;
+    outline: none;
+    font-size: 14px;
+    color: #262626;
+    width: 200px;
+}
+#feedh {
+    padding-left: 10px;
+}
+.header-icons img {
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+    
+}
+.header-icons{
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main  */
+main {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Sidebar */
+aside {
+    width: 250px;
+    margin-right: 40px;
+    position: sticky;
+    top: 80px;
+    align-self: flex-start;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.profile p {
+    font-size: 14px;
+    color: #8e8e8e;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.stats div {
+    text-align: center;
+}
+
+.stats strong {
+    display: block;
+    font-size: 16px;
+}
+
+.stats span {
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    color: #262626;
+    transition: color 0.3s;
+}
+
+nav ul li.active,
+nav ul li:hover {
+    color: #0095f6;
+}
+
+nav ul li img {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+}
+
+/* Feed */
+.feed {
+    flex: 1;
+}
+
+.stories {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.stories h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.story-list {
+    display: flex;
+    overflow-x: auto10
+    padding-bottom: 10px;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.story img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #ff3040;
+    margin-bottom: 5px;
+}
+
+.story span {
+    font-size: 12px;
+    color: #262626;
+}
+
+/* Posts*/
+.post-grid {
+    display: grid;
+   
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    overflow-y: hidden;
+    gap: 30px;
+}
+
+.post {
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.likesharesubscribe button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.likesharesubscribe button img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.likesharesubscribe button:hover img {
+    opacity: 1;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.likesharesubscribe {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.likesharesubscribe button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.likesharesubscribe button img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+    transition: opacity 0.3s ;
+
+}
+
+.likesharesubscribe button:hover img {
+    opacity: 1;
+}
+#post1{
+    overflow-y: hidden;
+    height: 310px;
+    width: auto;
+    box-sizing: border-box;
+}
+#post2 {
+    height: 220px;
+    background: white;
+}
+#post4 {
+    height: 250px;
+    transform: translate(-0px, -100px);
+}
+#post6{
+    height: 170px;
+    transform: translate(-0px, -13px);
+    
+}
+#post5{
+    transform: translate(-0px, -190px);
+}
+#like1 {
+    transform: translate(-0px, -23px);
+    display: none;
+}
+.addbtn {
+    text-align: center;
+}
+.header-icons{
+    display: flex;
+}
+#addPhotosButton {
+    background-image: linear-gradient(to right, #ff7eb3, #ff758c, #ff6a65, #ff5e40, #ff511f);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#addPhotosButton img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+#addPhotosButton:hover {
+    background-image: linear-gradient(to right, #ff6a95, #ff4d4d, #d60000);
+
+
+      
+}
+
+  
+/* Responsive Design ka jaguad */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    aside {
+        width: 100%;
+        margin-bottom: 20px;
+        position: static;
+    }
+
+    .search-input {
+        width: 150px;
+    }
+}
+
+
