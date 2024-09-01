@@ -238,6 +238,11 @@ nav ul li img {
     align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
+    transform: scale(1.1);
+    
+}
+.post :hover{
+    transform: scale(1.1);
 }
 .likesharesubscribe button {
     background: none;
