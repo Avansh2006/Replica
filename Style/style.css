@@ -352,6 +352,11 @@ nav ul li img {
 .story:hover {
     transform: rotate(360deg);
 }
+#pilus {
+    height:30px;
+    width: 30px;
+    transform: translate(33px, -35px);
+}
 
   
 /* Responsive Design ka jaguad */
