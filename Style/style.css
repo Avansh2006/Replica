@@ -365,6 +365,10 @@ nav ul li img {
         flex-direction: column;
         padding: 0 10px;
     }
+    .story-list{
+        overflow-x: auto;
+
+    }
 
     aside {
         width: 100%;
